@@ -14,10 +14,11 @@
 
     html, body {
       height: 100%;
-      scroll-behavior: smooth;
       font-family: 'Roboto', sans-serif;
       background-color: #FFF9C7;
-      scroll-padding-top: 80px; /* Added for fixed nav offset */
+      scroll-padding-top: 80px;
+      z-index: 1;
+      position: relative;
     }
 
     nav {
@@ -29,12 +30,10 @@
       background: #FEEA70;
       padding: 12px 60px;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       display: flex;
       gap: 25px;
       justify-content: center;
       align-items: center;
-      backdrop-filter: blur(10px);
       flex-wrap: nowrap;
     }
 
@@ -64,8 +63,8 @@
 
     .title {
       font-family: 'Playfair Display', serif;
-      font-size: 6rem;
-      font-weight: 800;
+      font-size: 7rem;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: -2px;
       color: #81CEEB;
@@ -89,7 +88,6 @@
       background-color: #fff3c4;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .project-gallery figure {
@@ -99,7 +97,6 @@
       background: #ffffff;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
 
@@ -126,7 +123,6 @@
       height: auto;
       border-radius: 10px;
       margin-top: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
     iframe {
@@ -134,10 +130,6 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    footer a {
-      color: #007acc;
-      margin: 10px 0; 
-    }
   </style>
 </head>
 <body>
@@ -162,7 +154,7 @@
 <section id="about">
   <div class="title">About Me</div>
   <div class="subtitle">Hi! I'm Jolin Li</div>
-  <img src="jolin-pic.jpg" alt="Photo of Me" style="margin-top: 20px; width: 200px; height: auto; border-radius: 12px;">
+  <img src="me.jpg" alt="Photo of Me" style="margin-top: 20px; width: 200px; height: auto; border-radius: 12px;">
   <p class="bio-text">
     I'm a designer and storyteller currently studying at the Stratford School of Interaction Design and Business. I'm passionate about crafting digital experiences that are both intuitive and emotionally resonant.<br><br>
     At the University of Waterloo, I've been exploring the intersection of technology, creativity, and human connection, learning how thoughtful design can shape the way people interact with the world and each other. My work blends clean aesthetics with meaningful function, whether I'm prototyping interfaces, designing visual identities, or curating digital content.<br><br>
@@ -177,7 +169,7 @@
   <div class="project-gallery">
     <figure>
       <img src="social-campaign.jpg" alt="Marketing Project">
-      <figcaption>Featured Marketing Project</figcaption>
+      <figcaption> Rebranding Project</figcaption>
       <p style="margin-top: 20px; font-size: 0.95rem; max-width: 280px; color: #444;">
         An assignment where we rebranded an existing company. I chose Flipper's, a Japanese pancake brunch restaurant, and gave it a more playful identity by incorporating elements of Japanese culture and soft, cheerful design.
       </p>
@@ -199,7 +191,7 @@
   </div>
   <img src="studyhubframes.jpg" alt="UX design mockup" class="ux-image">
   <p style="margin-top: 12px; font-size: 0.95rem; max-width: 600px; color: #444;">
-    Our group created a high-fidelity wireframe mockup for a study app with live-availability updates, filtered preferences, and event planning. This app helps students who struggle to find suitable study spots during peak times. This mockup was made in Figma.
+    Our team designed a high-fidelity wireframe for a study space app that features real-time availability updates, customizable filters, and collaborative event planning. Tailored for students who face challenges finding ideal study spots during busy hours, the prototype was developed in Figma to enhance user experience and accessibility on campus.
   </p>
 
   <h4 style="margin-top: 50px; font-size: 1.2rem; color: #333;">Video Streaming App</h4>
@@ -207,7 +199,7 @@
   <img src="uxextra.jpg" alt="Additional UX Mockup"
        style="margin-top: 10px; width: 600px; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <p style="margin-top: 10px; font-size: 0.9rem; color: #666; max-width: 600px;">
-    This app was made in two hours for a Figma challenge we had in class. We had to create a video streaming app that meets all the requirements that was provided.
+    This app was developed in just two hours as part of an in-class Figma design challenge. The task was to create a functional and visually engaging video streaming app that met a specific set of user and technical requirements. Despite the time constraint, the final product included user-friendly navigation, personalized recommendations, and a clean layout designed to enhance the viewing experience.
   </p>
 </section>
 
@@ -216,11 +208,16 @@
   <div class="title">Let's Connect</div>
   <div class="subtitle">
     <a href="mailto:jyzli@uwaterloo.ca">jyzli@uwaterloo.ca</a><br>
-    <a href="https://uwaterloo.ca" target="_blank">University of Waterloo</a><br>
+    <a href="https://ca.linkedin.com/in/jolin-li-3b3bb3240" >LinkedIn</a><br>
+    <a href="https://www.canva.com/design/DAGTtNHRs8c/gIijEzCcpXL9PICqYDFhGg/edit?utm_content=DAGTtNHRs8c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      
+       style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #81CEEB; color: #fff; border-radius: 8px; font-weight: bold; text-decoration: none;">
+      View Resumé
+    </a>
+    <br>
     <img src="cutegif2.gif" alt="Another cute gif"
          style="margin-top: 20px; width: 80px; height: auto; border-radius: 12px;">
   </div>
 </section>
-
 </body>
 </html>
